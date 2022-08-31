@@ -1,0 +1,67 @@
+﻿body{
+
+	font-family: Tahoma; /* Семейство шрифтов */
+	font-size: 24pt; /* Размер основного шрифта в пунктах  */
+	background-color: #FFFFF0; /* Цвет фона веб-страницы */
+	color: #4682B4; /* Цвет основного текста */ 
+	position:
+}
+
+nav{
+	font-family: Tahoma;
+	font-size: 24pt;
+	background-color: #7B68EE;
+	color: #4682B4;
+}
+
+*{
+	margin: 0; 
+	padding: 0
+}
+
+.menu{
+	text-align: center;
+    padding: 20px;
+}
+
+.navigation{
+
+    color: black;
+    display: inline;
+    margin: 0px 40px 40px 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+}
+
+.items{
+margin-top: 10px;
+margin-left: 20%;
+list-style-type: none;
+}
+
+
+button:hover{
+    color: #000;
+    background-color: #7B68EE;
+    transition: 0.2s;
+}
+
+input[type=button]{
+	padding: 30px 30px;
+    margin: 8px 0px 0px 0px;
+    cursor: pointer;
+    border: 1px solid #7B68EE;
+    border-radius: 0px 0px;
+}
+
+.grnd{
+	position: absolute;
+    top: 40%;
+    left: 45%;
+}

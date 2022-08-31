@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<meta charset="utf-8">
+
+		<title>tic-tak-toe</title>
+
+		<link rel="stylesheet" href="mystyle.css">
+
+	</head>
+	<body>
+		
+  		
+        
+			<label for="field">Choose a field size:</label>
+			<select name="fild" id="field">
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+
+			<label for="mode">Choose a game mode:</label>
+			<select name="mode" id="mode">
+				<option value="0">Player vs Player</option>
+				<option value="1">Player vs Bot</option>
+				<option value="2">Bot vs Player</option>
+				<option value="3">Bot vs Bot</option>
+			</select>
+			<input type="button" id="acpt" value="accept">
+			<input type="button" disabled="true" id="selec" value="x"> <a> <-- Current player </a><br>
+
+			
+			<grnd class ="grnd">
+        	<input type="button" value="_" id = "00">
+        	<input type="button" value="_" id = "01">
+        	<input type="button" value="_" id = "02">
+        	<input type="button" value="_" id = "03">
+        	<input type="button" value="_" id = "04"><br>
+
+        	<input type="button" value="_" id = "10">
+        	<input type="button" value="_" id = "11">
+        	<input type="button" value="_" id = "12">
+        	<input type="button" value="_" id = "13">
+        	<input type="button" value="_" id = "14"><br>
+
+        	<input type="button" value="_" id = "20">
+        	<input type="button" value="_" id = "21">
+        	<input type="button" value="_" id = "22">
+        	<input type="button" value="_" id = "23">
+        	<input type="button" value="_" id = "24"><br>
+
+        	<input type="button" value="_" id = "30">
+        	<input type="button" value="_" id = "31">
+        	<input type="button" value="_" id = "32">
+        	<input type="button" value="_" id = "33">
+        	<input type="button" value="_" id = "34"><br>
+
+        	<input type="button" value="_" id = "40">
+        	<input type="button" value="_" id = "41">
+        	<input type="button" value="_" id = "42">
+        	<input type="button" value="_" id = "43">
+        	<input type="button" value="_" id = "44"><br><br>
+
+        	<input type="button" id="agn" value="again"><br>
+       		</grnd>
+        	<div id="whowin"></div>
+        	<script src="tic-tak-toe-new.js"></script>
+		</body>
+</html>
