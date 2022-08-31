@@ -117,9 +117,9 @@ function fillVecs(cntOp, cntSi, k)
 		priority.push(2);
 		steps.push(k);
 	}
-	if(cntOp > 1 && cntSi ==0)
+	if(cntOp == fieldSize-1 && cntSi ==0 && cntOp >1)
 	{
-		priority.push(4);
+		priority.push(6);
 		steps.push(k);
 	}
 	if(cntOp >= 1 && cntSi >=1)
@@ -127,9 +127,19 @@ function fillVecs(cntOp, cntSi, k)
 		priority.push(0);
 		steps.push(k);
 	}
-	if(cntSi > 1 && cntOp ==0)
+	if(cntSi == fieldSize-1 && cntOp ==0 && cntSi >1)
 	{
-		priority.push();
+		priority.push(7);
+		steps.push(k);
+	}
+	if(cntSi == fieldSize-2 && cntOp ==0 && cntSi >1)
+	{
+		priority.push(5);
+		steps.push(k);
+	}
+	if(cntSi == fieldSize-3 && cntOp == 0 && cntSi >1)
+	{
+		priority.push(4);
 		steps.push(k);
 	}
 	if(cntSi == 1 && cntOp ==0)
